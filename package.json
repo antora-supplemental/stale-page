@@ -1,0 +1,46 @@
+{
+  "name": "@antora-supplemental/stale-page",
+  "version": "0.1.0",
+  "description": "CLI: pages past page-last-edited / git age threshold; optional --fail",
+  "license": "MIT",
+  "author": "Ryan Johnson (https://github.com/AMDphreak)",
+  "keywords": [
+    "antora",
+    "stale",
+    "freshness",
+    "page-last-edited"
+  ],
+  "homepage": "https://github.com/antora-supplemental/stale-page",
+  "bugs": {
+    "url": "https://github.com/antora-supplemental/stale-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antora-supplemental/stale-page.git"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "bin": {
+    "stale-page": "bin/stale-page.js"
+  },
+  "files": [
+    "bin/**/*",
+    "lib/**/*",
+    "README.adoc",
+    "CHANGELOG.adoc",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@antora-supplemental/triage-ux-kit": "github:antora-supplemental/triage-ux-kit#v0.1.0"
+  }
+}

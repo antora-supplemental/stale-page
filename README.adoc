@@ -1,0 +1,22 @@
+= Stale Page
+:description: Pages past page-last-edited / git age threshold; optional --fail.
+:page-orig-author: Ryan Johnson
+:page-last-edited: 2026-09-27
+
+**Stale Page** surfaces AsciiDoc pages whose `:page-last-edited:` (or git last-commit / mtime fallback) exceeds a day threshold. Optional `--fail` for CI.
+
+Support: support@devcentr.org
+
+== Install
+
+[source,bash]
+----
+pnpm add -D github:antora-supplemental/stale-page#v0.1.0
+----
+
+== CLI
+
+[source,bash]
+----
+npx stale-page --root ./docs --days 365 --out ./build/stale-page [--fail]
+----
