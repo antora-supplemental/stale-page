@@ -1,6 +1,6 @@
 {
   "name": "@antora-supplemental/stale-page",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI: pages past page-last-edited / git age threshold; optional --fail",
   "license": "MIT",
   "author": "Ryan Johnson (https://github.com/AMDphreak)",
